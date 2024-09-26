@@ -8,11 +8,11 @@ import Footer from "../../Footer/Footer";
 
 export const News = () => {
   const [data, setData] = useState([]);
-  const baseURL = "http://localhost:3001"; // Define your base URL
+  const baseURL = "http://localhost:3000"; // Define your base URL
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/getAllEvents") // Common endpoint for all events
+      .get("http://localhost:3000/api/getAllEvents") // Common endpoint for all events
       .then((response) => {
         setData(response.data);
       })

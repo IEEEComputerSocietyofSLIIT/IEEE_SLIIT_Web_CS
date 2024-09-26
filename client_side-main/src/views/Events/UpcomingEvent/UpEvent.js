@@ -13,7 +13,7 @@ function News() {
     const fetchEvents = async () => {
       try {
         // Fetch data from your backend API
-        const response = await axios.get("http://localhost:3001/api/getAllEvents"); // Replace with fetch if needed
+        const response = await axios.get("http://localhost:3000/api/getAllEvents"); // Replace with fetch if needed
         const eventData = response.data;
 
         // Update state with fetched event data
@@ -47,7 +47,7 @@ function News() {
             className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-[45%] h-96 hover:scale-105 transition-transform duration-500"
           >
             <img
-              src={`http://localhost:3001${event.image}`} // Assuming the images are served from the backend
+              src={`http://localhost:3000${event.image}`} // Assuming the images are served from the backend
               alt={event.name}
               className="absolute inset-0 h-full w-full object-cover"
             />

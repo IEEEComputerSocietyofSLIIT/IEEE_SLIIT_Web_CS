@@ -24,18 +24,7 @@ const EditorialTeam = () => {
             <h3 className="editorial-team">Committee Members</h3>
           </div>
         </div>
-        <div className="lorem-ipsum-dolor-container1">
-          <b>Lorem ipsum dolor sit amet</b>
-          <span>
-            , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </span>
-        </div>
+        
         <div className="publicity-frame">
           <div className="lead-pic-member">
             <div className="anjula-member">
@@ -91,18 +80,7 @@ const EditorialTeam = () => {
             <h3 className="editorial-team">Past Committee 22/23</h3>
           </div>
         </div>
-        <div className="lorem-ipsum-dolor-container1">
-          <b>Lorem ipsum dolor sit amet</b>
-          <span>
-            , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </span>
-        </div>
+        
         <div className="publicity-frame">
           <div className="lead-pic-member">
             <div className="anjula-member">
@@ -164,20 +142,7 @@ const EditorialTeam = () => {
               <p className="member">Treasurer</p>
             </b>
           </div>
-          <div className="lead-pic-member2">
-            <div className="rectangle-parent1">
-              <div className="frame-child2" />
-              <img
-                className="member-icon1"
-                loading="eager"
-                alt=""
-                src={ShashikaKahatapitiya}              />
-            </div>
-            <b className="dasith-sathpura-member-container">
-              <p className="dasith-sathpura">Shashika Kahatapitiya</p>
-              <p className="member1">Webmaster</p>
-            </b>
-          </div>
+          
         </div>
         <br />
 
@@ -187,18 +152,7 @@ const EditorialTeam = () => {
             <h3 className="editorial-team">Past Committee 21/22</h3>
           </div>
         </div>
-        <div className="lorem-ipsum-dolor-container1">
-          <b>Lorem ipsum dolor sit amet</b>
-          <span>
-            , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </span>
-        </div>
+        
         <div className="publicity-frame">
           <div className="lead-pic-member">
             <div className="anjula-member">
@@ -284,24 +238,13 @@ const EditorialTeam = () => {
             <h3 className="editorial-team">Web Development Team</h3>
           </div>
         </div>
-        <div className="lorem-ipsum-dolor-container1">
-          <b>Lorem ipsum dolor sit amet</b>
-          <span>
-            , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </span>
-        </div>
+        
         <div className="publicity-frame">
            <div style={{
             width: '70%'
            }}>
             <img src={teamPhoto} alt="Team" style={{
-              width: '100%',
+              width: '100%', borderRadius: '30px'
             }} />
            </div>
         </div>

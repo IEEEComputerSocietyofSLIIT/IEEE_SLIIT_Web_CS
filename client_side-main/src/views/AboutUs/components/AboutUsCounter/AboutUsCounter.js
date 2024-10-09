@@ -2,69 +2,61 @@ import { useEffect } from 'react';
 import './AboutUsCounter.css'
 
 const AboutUsCounter = () => {
-        
-    const updateCounter = (element , interval , target) => {
+
+    const updateCounter = (element, interval, target) => {
         element.innerText = "0";
         let i = 0;
-        if (element.innerText == target){
+        if (+element.innerText === target) {
             return;
-        } else if (element.innerText != "0"){
-            i = +element.innerText
+        } else if (element.innerText !== "0") {
+            i = +element.innerText;
         }
-        const counter = setInterval(()=>{
+        const counter = setInterval(() => {
             i = i + 2;
             element.innerText = i;
-            
-            if (i == target){
-                clearInterval(counter);
-            }
-        } , interval)
-    }
 
-    const updateFacebookCounter = (element , interval , target) => {
+            if (i >= target) { // Changed comparison to avoid overshooting
+                clearInterval(counter);
+                element.innerText = target; // Ensure the count ends at the target value
+            }
+        }, interval);
+    };
+
+    const updateFacebookCounter = (element, interval, target) => {
         element.innerText = "0";
         let i = 0;
-        if (element.innerText == target){
+        if (+element.innerText === target) {
             return;
-        } else if (element.innerText != "0"){
-            i = +element.innerText
+        } else if (element.innerText !== "0") {
+            i = +element.innerText;
         }
-        const counter = setInterval(()=>{
+        const counter = setInterval(() => {
             i = i + 10;
             element.innerText = i;
-            
-            if (i == target){
+
+            if (i >= target) {
                 clearInterval(counter);
+                element.innerText = target;
             }
-        } , interval)
-    }
+        }, interval);
+    };
 
     useEffect(() => {
-        // document.getElementById('count1').innerText = "0";
-        // document.getElementById('count2').innerText = "0";
-        // document.getElementById('count3').innerText = "0";
-        // document.getElementById('count4').innerText = "0";
-        // setTimeout(() => {
-        //     updateCounter(document.getElementById('count1') , .2 , 1500);
-        //     updateCounter(document.getElementById('count2') , 55 , 100);
-        //     updateCounter(document.getElementById('count3') , 8 , 650);
-        //     updateCounter(document.getElementById('count4') , 50 , 40);
-        // }, 1500);
-        updateCounter(document.getElementById('count1') , 30 , 240);
-        updateCounter(document.getElementById('count2') , 10 , 726);
-        updateFacebookCounter(document.getElementById('count3') , 5 , 5500);
-        updateCounter(document.getElementById('count4') , 5 , 1420);
-        updateCounter(document.getElementById('count9') , 300 , 22);
-        updateCounter(document.getElementById('count6') , 50 , 128);
-        updateCounter(document.getElementById('count7') , 20 , 318);
-        updateCounter(document.getElementById('count8') , 10 , 704);
-    })
+        updateCounter(document.getElementById('count1'), 10, 800);  // YouTube
+        updateCounter(document.getElementById('count2'), 10, 827);  // Instagram
+        updateFacebookCounter(document.getElementById('count3'), 5, 5500);  // Facebook
+        updateCounter(document.getElementById('count4'), 5, 1690);  // LinkedIn
+        updateCounter(document.getElementById('count9'), 300, 22);  // X
+        updateCounter(document.getElementById('count6'), 50, 128);  // Threads
+        updateCounter(document.getElementById('count7'), 20, 392);  // Telegram
+        updateCounter(document.getElementById('count8'), 5, 1548); // WhatsApp
+    });
 
-    return ( 
+    return (
         <div className="counters m-8 gap-8 max-w-7xl mx-auto md:my-32">
 
             <div>
-                <h3 className='font-semibold'>Youtube Subscribers</h3>
+                <h3 className='font-semibold'>YouTube Subscribers</h3>
                 <p className='font-semibold' id="count1"></p>
             </div>
             <div>
@@ -76,8 +68,8 @@ const AboutUsCounter = () => {
                 <p className='font-semibold' id="count3"></p>
             </div>
             <div>
-                <h3 className='font-semibold'>linkedin Followers</h3>
-                <p  className='font-semibold' id="count4"></p>
+                <h3 className='font-semibold'>LinkedIn Followers</h3>
+                <p className='font-semibold' id="count4"></p>
             </div>
             <div>
                 <h3 className='font-semibold'>X Followers</h3>
@@ -97,7 +89,7 @@ const AboutUsCounter = () => {
             </div>
 
         </div>
-     );
+    );
 }
- 
+
 export default AboutUsCounter;

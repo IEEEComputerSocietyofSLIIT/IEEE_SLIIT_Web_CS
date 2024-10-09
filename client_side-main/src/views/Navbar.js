@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Logo from '../views/images/logo.png';
+import Logo from '../views/images/CS Logo.png';
 
 const Navbar = ({ home, aboutus, communityDetails, events, contactUs, gallery, news }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true); // Navbar visibility state
+  const [lastScrollY, setLastScrollY] = useState(0);  // Store last scroll position
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,6 +14,29 @@ const Navbar = ({ home, aboutus, communityDetails, events, contactUs, gallery, n
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  // Handle scroll to hide/show navbar based on scroll direction
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and passed 100px, hide navbar
+        setShowNavbar(false);
+      } else {
+        // Scrolling up, show navbar
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY); // Update last scroll position
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   // Close the menu when clicking outside the menu or on any link
   useEffect(() => {
@@ -28,10 +53,16 @@ const Navbar = ({ home, aboutus, communityDetails, events, contactUs, gallery, n
 
   return (
     <div className='mx-auto md:w-2/3 '>
-      <nav className="relative md:fixed top-0 left-1/2 transform -translate-x-1/2 w-full md:w-[900px] bg-white z-50 shadow-2xl p-4 py-3 md:rounded-b-3xl">
+      <nav
+        className={`relative md:fixed top-0 left-1/2 transform -translate-x-1/2 w-full md:w-[900px] bg-white z-50 shadow-2xl p-4 py-3 md:rounded-b-3xl transition-transform duration-500 ${
+          showNavbar ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
         <div className="flex justify-between items-center md:justify-center gap-4 mx-auto md:gap-0">
           {/* Logo */}
-          <img src={Logo} alt="Logo" className="h-10 mr-10" />
+          <a href='/'>
+            <img src={Logo} alt="Logo" className="h-10 mr-10" />
+          </a>
 
           {/* Nav Links (for larger screens) */}
           <div className="hidden md:flex gap-8 items-center">

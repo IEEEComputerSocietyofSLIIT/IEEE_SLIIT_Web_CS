@@ -2,29 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./upevent.css";
 import video from "./img/Bvinews.webm";
 import Footer from "../../Footer/Footer";
-import axios from "axios"; // Optional: If you're using axios
+import event1 from "./img/FB_IMG_1719930914312.jpg";
 
 function News() {
-  // State to hold the fetched events data
-  const [events, setEvents] = useState([]);
+  // Sample data to replace the fetched data from the backend
+  const sampleEvents = [
+    {
+      _id: "1",
+      name: "SLIITXtreme 2.0",
+      description: "SLIITXtreme 2.0 was organized by the IEEE Computer Society of SLIIT, in collaboration with Software Engineering Student Community of SLIIT. This event is an awareness hackathon event, IEEEXtreme 17.0 Global Coding Competition. 💻",
+      image: {event1},
+    }
+  ];
 
-  // Fetch events from the backend
-  useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        // Fetch data from your backend API
-        const response = await axios.get("http://localhost:3000/api/getAllEvents"); // Replace with fetch if needed
-        const eventData = response.data;
-
-        // Update state with fetched event data
-        setEvents(eventData);
-      } catch (error) {
-        console.error("Error fetching event data:", error);
-      }
-    };
-
-    fetchEvents();
-  }, []); // Empty dependency array to run this once on component mount
+  // Instead of fetching data, use the sample data directly
+  const [events, setEvents] = useState(sampleEvents);
 
   return (
     <div>
@@ -40,14 +32,14 @@ function News() {
       </div>
 
       <section className="flex flex-wrap gap-6 mx-10 justify-center my-20">
-        {/* Step 2: Map through the fetched event data */}
+        {/* Step 2: Map through the sample event data */}
         {events.map((event) => (
           <article
             key={event._id}
             className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-[45%] h-96 hover:scale-105 transition-transform duration-500"
           >
             <img
-              src={`http://localhost:3000${event.image}`} // Assuming the images are served from the backend
+              src={event.image} // Displaying the sample images
               alt={event.name}
               className="absolute inset-0 h-full w-full object-cover"
             />

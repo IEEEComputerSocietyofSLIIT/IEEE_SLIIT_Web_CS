@@ -9,19 +9,25 @@ import React from "react";
 import webwrap from "./img/7.png";
 import Footer from '../../Footer/Footer'
 import pixel2 from './img/Screenshot (526).png'
-import extreme3 from "./img/AAAA.png"
+import extreme3 from "./img/extreme3.jpg"
 
 function Events() {
   const upcomingEvents = [
+    // {
+    //   name: "SLIITXtreme 3.0",
+    //   description:
+    //     "SLIITXtreme 3.0 was organized by the IEEE Computer Society of SLIIT, in collaboration with Software Engineering Student Community of SLIIT. This event is an awareness hackathon event, IEEEXtreme 18.0 Global Coding Competition.",
+    //   image: extreme3, // Replace this with the correct path to the image
+    // },
+  ];
+
+  const pastEvents = [
     {
       name: "SLIITXtreme 3.0",
       description:
         "SLIITXtreme 3.0 was organized by the IEEE Computer Society of SLIIT, in collaboration with Software Engineering Student Community of SLIIT. This event is an awareness hackathon event, IEEEXtreme 18.0 Global Coding Competition.",
       image: extreme3, // Replace this with the correct path to the image
     },
-  ];
-
-  const pastEvents = [
     {
       name: "CyberShield 3.0",
       description:

@@ -10,12 +10,12 @@ import Footer from "../../Footer/Footer";
 
 export const News = () => {
   const upcomingEvents = [
-    {
-      name: "SLIITXtreme 3.0",
-      description:
-        "The IEEE Computer Society of Sri Lanka Institute of Information Technology (SLIIT), in collaboration with the Software Engineering Student Community (SESC) of SLIIT, organizes SLIITXtreme 3.0. This event aims to conduct a virtual hackathon as an introductory hackathon to the IEEEXtreme 18.0 global programming competition., which is proposed to be held annually.",
-      image: extreme2, // Replace this with the correct path to the image
-    },
+    // {
+    //   name: "SLIITXtreme 3.0",
+    //   description:
+    //     "The IEEE Computer Society of Sri Lanka Institute of Information Technology (SLIIT), in collaboration with the Software Engineering Student Community (SESC) of SLIIT, organizes SLIITXtreme 3.0. This event aims to conduct a virtual hackathon as an introductory hackathon to the IEEEXtreme 18.0 global programming competition., which is proposed to be held annually.",
+    //   image: extreme2, // Replace this with the correct path to the image
+    // },
     {
       name: "Official Merchandise Pack",
       description:

@@ -12,6 +12,14 @@ import ShashikaKahatapitiya from './images/Shashika Kahatapitiya.jpg'
 import SubanistaThaneswaran from './images/Subanista Thaneswaran.jpg'
 import ThanutiPiyarathne from './images/Thanuti Piyarathne.jpg'
 import WithushanPhilip from './images/Withushan Philip.jpg'
+import AdithyaLiyanaarachchi from "./images/Adithya-Liyanaarachchi.jpg";
+import IndudiniThennakone from "./images/Indudini-Thennakone.jpg";
+import KanzurrizkRihan from "./images/Kanzurrizk-Rihan.jpg";
+
+
+import Maleesha from "./images/Maleesha.jpg";
+import YasiruVithana from "./images/Yasiru-Vithana.jpg";
+import HeshanGimhana from "./images/Heshan-gimhana.jpg";
 
 import teamPhoto from './images/teamPhoto.jpg'
 
@@ -33,12 +41,112 @@ const EditorialTeam = () => {
                 className="lead-pic-icon"
                 loading="eager"
                 alt=""
-                src={HeidiErin}
+                src={YasiruVithana}
               />
             </div>
             <b className="abiru-abayapala-leader-container">
-              <p className="abiru-abayapala">Heidi Erin</p>
-              <p className="leader">Committee Member</p>
+              <p className="abiru-abayapala">Yasiru Vithana</p>
+              <p className="leader">Assistant Secretary</p>
+            </b>
+          </div>
+          <div className="lead-pic-member1">
+            <div className="frame-div">
+              <div className="frame-child1" />
+              <img
+                className="member-icon"
+                loading="eager"
+                alt=""
+                src={Maleesha}
+              />
+            </div>
+            <b className="chamindu-dilneth-member-container">
+              <p className="chamindu-dilneth">Maleesha Wijerathne</p>
+              <p className="member">Treasurer</p>
+            </b>
+          </div>
+          <div className="lead-pic-member2">
+            <div className="rectangle-parent1">
+              <div className="frame-child2" />
+              <img
+                className="member-icon1"
+                loading="eager"
+                alt=""
+                src={HeshanGimhana}/>
+            </div>
+            <b className="dasith-sathpura-member-container">
+              <p className="dasith-sathpura">Heshan Gimhana</p>
+              <p className="member1">Editor</p>
+            </b>
+          </div>
+        </div>
+
+        
+        <br/>
+        <div className="editorialteamframe1">
+          <div className="framegroup">
+            <h3 className="editorial-team">Past Committee 23/24</h3>
+          </div>
+        </div>
+
+        <div className="publicity-frame">
+          <div className="lead-pic-member">
+            <div className="anjula-member">
+              <div className="anjula-member-child" />
+              <img
+                className="lead-pic-icon"
+                loading="eager"
+                alt=""
+                src={AdithyaLiyanaarachchi}
+              />
+            </div>
+            <b className="abiru-abayapala-leader-container">
+              <p className="abiru-abayapala">Adithya Liyanaarachchi</p>
+              <p className="leader">Chairperson</p>
+            </b>
+          </div>
+          <div className="lead-pic-member1">
+            <div className="frame-div">
+              <div className="frame-child1" />
+              <img
+                className="member-icon"
+                loading="eager"
+                alt=""
+                src={IndudiniThennakone}
+              />
+            </div>
+            <b className="chamindu-dilneth-member-container">
+              <p className="chamindu-dilneth">Indudini Thennakoon</p>
+              <p className="member">Vice Chairperson</p>
+            </b>
+          </div>
+          <div className="lead-pic-member1">
+            <div className="frame-div">
+              <div className="frame-child1" />
+              <img
+                className="member-icon"
+                loading="eager"
+                alt=""
+                src={KanzurrizkRihan}
+              />
+            </div>
+            <b className="chamindu-dilneth-member-container">
+              <p className="abiru-abayapala">Kanzurrizk Rihan</p>
+              <p className="member">Secretary</p>
+            </b>
+          </div>
+          <div className="lead-pic-member1">
+            <div className="frame-div">
+              <div className="frame-child1" />
+              <img
+                className="member-icon"
+                loading="eager"
+                alt=""
+                src={HeidiErin}
+              />
+            </div>
+            <b className="chamindu-dilneth-member-container">
+              <p className="chamindu-dilneth">Heidi Erin</p>
+              <p className="member">Committee Member</p>
             </b>
           </div>
           <div className="lead-pic-member1">
@@ -53,26 +161,26 @@ const EditorialTeam = () => {
             </div>
             <b className="chamindu-dilneth-member-container">
               <p className="chamindu-dilneth">Thisara Dewinda</p>
-              <p className="member">Committee Member</p>
+              <p className="member">Treasurer</p>
             </b>
           </div>
-          <div className="lead-pic-member2">
-            <div className="rectangle-parent1">
-              <div className="frame-child2" />
+          <div className="lead-pic-member1">
+            <div className="frame-div">
+              <div className="frame-child1" />
               <img
-                className="member-icon1"
+                className="member-icon"
                 loading="eager"
                 alt=""
-                src={TharakaNuwan}              />
+                src={TharakaNuwan}
+              />
             </div>
-            <b className="dasith-sathpura-member-container">
-              <p className="dasith-sathpura">Tharaka Nuwan</p>
-              <p className="member1">Committee Member</p>
+            <b className="chamindu-dilneth-member-container">
+              <p className="chamindu-dilneth">Tharaka Nuwan</p>
+              <p className="member">Treasurer</p>
             </b>
           </div>
+          
         </div>
-
-        
 
         <br />
         <div className="editorialteamframe1">

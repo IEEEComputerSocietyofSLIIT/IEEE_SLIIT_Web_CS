@@ -33,10 +33,7 @@ function Gallery() {
       id: 4,
       imgSrc: img4,
     },
-    {
-      id: 5,
-      imgSrc: img5,
-    },
+    //TODO:Add more images here
   ];
 
   const getImg = (imgSrc) => {

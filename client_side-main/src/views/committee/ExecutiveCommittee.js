@@ -64,7 +64,7 @@ const MEMBERSHIP = () => {
                   <p className="vice-chairperson">Chairperson</p>
                   <div className="flex my-4 justify-end">
                     <a
-                      href="https://lk.linkedin.com/in/adithya-liyanaarachchi-59a90a215"
+                      href="https://www.linkedin.com/in/azri-muhsin-88b0b4249/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -116,7 +116,7 @@ const MEMBERSHIP = () => {
                   <p className="secretary">Vice Chairperson</p>
                   <div className="flex my-4">
                     <a
-                      href="https://lk.linkedin.com/in/indudini-thennakoon"
+                      href="https://www.linkedin.com/in/ridmi-vindya-00166b277/"
                       target="_blank"
                       rel="noreferrer"
                     >

@@ -145,8 +145,8 @@ const EditorialTeam = () => {
               />
             </div>
             <b className="chamindu-dilneth-member-container">
-              <p className="chamindu-dilneth">Heidi Erin</p>
-              <p className="member">Committee Member</p>
+              <p className="chamindu-dilneth">Heidi Hettiarachchi</p>
+              <p className="member">Assistant Secretary</p>
             </b>
           </div>
           <div className="lead-pic-member1">
@@ -161,7 +161,7 @@ const EditorialTeam = () => {
             </div>
             <b className="chamindu-dilneth-member-container">
               <p className="chamindu-dilneth">Thisara Dewinda</p>
-              <p className="member">Treasurer</p>
+              <p className="member">Event Coordinator</p>
             </b>
           </div>
           <div className="lead-pic-member1">
@@ -176,7 +176,7 @@ const EditorialTeam = () => {
             </div>
             <b className="chamindu-dilneth-member-container">
               <p className="chamindu-dilneth">Tharaka Nuwan</p>
-              <p className="member">Treasurer</p>
+              <p className="member">Web Master</p>
             </b>
           </div>
           

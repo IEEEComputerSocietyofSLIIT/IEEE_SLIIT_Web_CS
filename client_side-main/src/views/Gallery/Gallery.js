@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./gallery.css";
-import img1 from "./img/14.jpg";
+import img1 from "./img/sliitExtreme_img.jpg";
 import img2 from "./img/FB_IMG_1719930313017.jpg";
 import img3 from "./img/FB_IMG_1719930902705.jpg";
 import img4 from "./img/05[1].jpg";
-import img5 from "./img/6.jpg";
+import img5 from "./img/14.jpg";
+// import img6 from "./img/group69.jpg";
 import { IoIosClose } from "react-icons/io";
 import Footer from "../Footer/Footer";
 
@@ -33,6 +34,14 @@ function Gallery() {
       id: 4,
       imgSrc: img4,
     },
+    {
+      id: 5,
+      imgSrc: img5,
+    },
+    // {
+    //   id: 6,
+    //   imgSrc: img6,
+    // },
     //TODO:Add more images here
   ];
 

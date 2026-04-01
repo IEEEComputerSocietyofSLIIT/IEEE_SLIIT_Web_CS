@@ -1,11 +1,8 @@
 import "./ExecutiveCommittee.css";
 import ShashikaLokuliyana from "./images/Shashika-Lokuliyana.JPG";
-import AdithyaLiyanaarachchi from "./images/Adithya-Liyanaarachchi.jpg";
-import IndudiniThennakone from "./images/Indudini-Thennakone.jpg";
-import KanzurrizkRihan from "./images/Kanzurrizk-Rihan.jpg";
-import Nethni from "./images/Nethni.jpg";
-import Ridmi from "./images/Ridmi.jpg";
-import AzriMuhsin from "./images/Azri-Muhsin.jpg";
+import HesaraPerera from "./images/CS-26_27-Hesara-Chairperson.jpg";
+import RaveenThilakarathna from "./images/CS-26_27-Raveen-ViceChairperson.jpg";
+import GayuthWaidyaratne from "./images/CS-26_27-Gayuth-Secretary.jpg";
 
 
 
@@ -59,12 +56,12 @@ const MEMBERSHIP = () => {
                 <div className="vicechairpersonframe-child" />
                 <h3 className="prabhasa-dharmarathne-vice-container">
                   <p className="prabhasa-dharmarathne">
-                  Azri Adheel Muhsin
+                    Hesara Perera
                   </p>
                   <p className="vice-chairperson">Chairperson</p>
-                  <div className="flex my-4 justify-end">
+                  <div className="flex my-5 justify-end">
                     <a
-                      href="https://www.linkedin.com/in/azri-muhsin-88b0b4249/"
+                      href="https://www.linkedin.com/in/hesaraperera/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -89,7 +86,7 @@ const MEMBERSHIP = () => {
                   className="vicechairpersonframe-item"
                   loading="eager"
                   alt=""
-                  src={AzriMuhsin}
+                  src={HesaraPerera}
                 />
               </div>
             </div>
@@ -100,7 +97,7 @@ const MEMBERSHIP = () => {
                   className="frame-inner"
                   loading="eager"
                   alt=""
-                  src={Nethni}
+                  src={GayuthWaidyaratne}
                 />
               </div>
               <div className="rectangle-container">
@@ -109,14 +106,14 @@ const MEMBERSHIP = () => {
                   className="group-icon"
                   loading="eager"
                   alt=""
-                  src={Ridmi}
+                  src={RaveenThilakarathna}
                 />
                 <h3 className="devni-dharmasooriya-secretary-container">
-                  <p className="devni-dharmasooriya">Ridmi Vivipem</p>
+                  <p className="devni-dharmasooriya">Raveen Sanjeew Thilakarathna</p>
                   <p className="secretary">Vice Chairperson</p>
-                  <div className="flex my-4">
+                  <div className="flex my-5 justify-start">
                     <a
-                      href="https://www.linkedin.com/in/ridmi-vindya-00166b277/"
+                      href="https://www.linkedin.com/in/raveen-thilakarathna-b8b149376/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -140,11 +137,11 @@ const MEMBERSHIP = () => {
               </div>
               <div className="pasan-senarath-treasurer-wrapper">
                 <h3 className="pasan-senarath-treasurer-container">
-                  <p className="pasan-senarath">Nethni Dias</p>
+                  <p className="pasan-senarath">Gayuth Waidyaratne</p>
                   <p className="treasurer">Secretary</p>
-                  <div className="flex my-4 justify-end">
+                  <div className="flex my-5 justify-end">
                     <a
-                      href="https://www.linkedin.com/in/nethni-dias-487b75264/"
+                      href="https://www.linkedin.com/in/gayuth-waidyaratne/"
                       target="_blank"
                       rel="noreferrer"
                     >

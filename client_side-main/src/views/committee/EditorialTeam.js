@@ -51,6 +51,8 @@ const EditorialTeam = () => {
                 loading="eager"
                 alt=""
                 src={Malindu}
+                onClick={() => window.open("https://www.linkedin.com/in/malindu-gurunada-07239b300/", "_blank")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <b className="chamindu-dilneth-member-container">
@@ -66,6 +68,8 @@ const EditorialTeam = () => {
                 loading="eager"
                 alt=""
                 src={Shanaka}
+                onClick={() => window.open("https://www.linkedin.com/in/shanaka-kalubowilage/", "_blank")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <b className="chamindu-dilneth-member-container">
@@ -81,6 +85,8 @@ const EditorialTeam = () => {
                 loading="eager"
                 alt=""
                 src={Himasha}
+                onClick={() => window.open("https://www.linkedin.com/in/himasha-hettiarachchi-a37577256/", "_blank")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <b className="chamindu-dilneth-member-container">
@@ -96,6 +102,8 @@ const EditorialTeam = () => {
                 loading="eager"
                 alt=""
                 src={Pulith}
+                onClick={() => window.open("https://www.linkedin.com/in/pulitht", "_blank")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <b className="dasith-sathpura-member-container">
